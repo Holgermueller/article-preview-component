@@ -4,6 +4,83 @@ html {
   padding: 0;
   font-family: "Manrope", sans-serif;
   font-optical-sizing: auto;
+  background-color: hsl(210, 46%, 95%);
+}
+
+main {
+  width: 90%;
+  margin: 10% auto;
+  border-radius: 36px;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.drawers {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  height: 33%;
+}
+
+.text-container,
+.user-info {
+  padding: 10%;
+}
+
+h1,
+.user-name {
+  color: hsl(217, 19%, 35%);
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+p,
+.date {
+  color: hsl(214, 17%, 51%);
+  font-size: 0.75rem;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 5%;
+}
+
+.avatar {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  float: left;
+  margin-right: 16px;
+}
+
+.user-name {
+  font-size: 16px;
+  margin: 0 0 4px 0;
+}
+
+.date {
+  margin: 4px 0 0 0;
+}
+
+button {
+  border: none;
+  border-radius: 50%;
+  margin-left: auto;
+}
+
+.button-icon {
+  align-self: center;
+  padding: 8px;
+}
+
+.button-text {
+  position: absolute;
+  color: transparent;
+  height: 1px;
+  width: 1px;
 }
 
 .attribution {
