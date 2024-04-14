@@ -39,25 +39,42 @@
           felt slightly bare and uninviting. I’ve got some simple tips to help
           you make any room feel complete.
         </p>
-      </div>
 
-      <div class="user-info">
-        <img class="avatar" src="images/avatar-michelle.jpg" alt="avatar" />
+        <div class="user-info">
+          <img class="avatar" src="images/avatar-michelle.jpg" alt="avatar" />
 
-        <div class="name-and-date">
-          <h2 class="user-name">Michelle Appleton</h2>
-          <p class="date">28 Jun 2020</p>
+          <div class="name-and-date">
+            <h2 class="user-name">Michelle Appleton</h2>
+            <p class="date">28 Jun 2020</p>
+          </div>
+
+          <button id="openButton" class="open-button" onclick="openModal()">
+            <img
+              class="button-icon"
+              src="images/icon-share.svg"
+              alt="Share icon"
+            />
+            <p class="button-text">Share</p>
+          </button>
         </div>
+     
 
-        <button>
+      <div id="shareSection" class="share-section">
+        <p>SHARE</p>
+        <a href="#" aria-label="Link to facebook"><img src="images/icon-facebook.svg"></i></a>
+        <a href="#" aria-label="Link to pinterest"><img src="images/icon-pinterest.svg"></i></a>
+        <a href="#" aria-label="Link to twitter"><img src="images/icon-twitter.svg"></i></a>
+        <button id="closeButton" class="close-button" onclick="closeModal()">
           <img
             class="button-icon"
             src="images/icon-share.svg"
             alt="Share icon"
           />
-          <p class="button-text">Share</p>
+          <p class="button-text">Close</p>
         </button>
       </div>
+
+    </div>
     </main>
 
     <div class="attribution">
@@ -69,5 +86,7 @@
         >Holger Mueller</a
       >.
     </div>
+
+    <script src="index.js"></script>
   </body>
 </html>

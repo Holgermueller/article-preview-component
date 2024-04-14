@@ -10,19 +10,18 @@ html {
 main {
   width: 90%;
   margin: 10% auto;
-  border-radius: 36px;
+  border-radius: 10px;
   background-color: hsl(0, 0%, 100%);
 }
 
 .drawers {
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   height: 33%;
 }
 
-.text-container,
-.user-info {
-  padding: 10%;
+.text-container {
+  padding: 10% 10% 5%;
 }
 
 h1,
@@ -45,7 +44,7 @@ p,
 .user-info {
   display: flex;
   flex-direction: row;
-  padding-bottom: 5%;
+  padding-top: 15%;
 }
 
 .avatar {
@@ -54,6 +53,10 @@ p,
   border-radius: 50%;
   float: left;
   margin-right: 16px;
+}
+
+.name-and-date {
+  align-self: center;
 }
 
 .user-name {
@@ -65,15 +68,18 @@ p,
   margin: 4px 0 0 0;
 }
 
-button {
+.open-button {
+  display: block;
+  height: 30px;
+  width: 30px;
   border: none;
   border-radius: 50%;
   margin-left: auto;
+  align-self: center;
 }
 
 .button-icon {
   align-self: center;
-  padding: 8px;
 }
 
 .button-text {
@@ -81,6 +87,49 @@ button {
   color: transparent;
   height: 1px;
   width: 1px;
+}
+
+.share-section {
+  position: absolute;
+  background-color: hsl(217, 19%, 35%);
+  width: 90%;
+  display: none;
+  flex-direction: row;
+  justify-content: space-between;
+  transform: translate(-10%, -80%);
+  padding: 5%;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.share-section > * {
+  align-self: center;
+}
+
+.share-section p {
+  color: hsl(212, 23%, 69%);
+  margin: 0;
+  font-size: 1rem;
+  letter-spacing: 4px;
+}
+
+.close-button {
+  display: block;
+  padding: 8px;
+  border: none;
+  border-radius: 50%;
+  background-color: hsl(214, 17%, 51%);
+}
+
+.close-button .button-text {
+  position: absolute;
+  color: transparent;
+  height: 1px;
+  width: 1px;
+}
+
+.close-button img {
+  filter: brightness(300%);
 }
 
 .attribution {
