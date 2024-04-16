@@ -139,3 +139,42 @@ p,
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+@media screen and (min-width: 600px) {
+  body,
+  html {
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  main {
+    display: flex;
+    flex-direction: row;
+    height: 40%;
+    width: 70%;
+  }
+
+  .drawers {
+    height: 100%;
+    width: 40%;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0px;
+  }
+
+  .text-container {
+    padding: 5%;
+  }
+
+  h1 {
+    font-size: 1.15rem;
+    margin: 0;
+  }
+
+  p {
+    line-height: 1.5rem;
+  }
+
+  .user-info {
+    padding-top: 5%;
+  }
+}
