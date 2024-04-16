@@ -151,7 +151,7 @@ p,
     display: flex;
     flex-direction: row;
     height: 40%;
-    width: 70%;
+    width: 55%;
   }
 
   .drawers {
@@ -162,7 +162,8 @@ p,
   }
 
   .text-container {
-    padding: 5%;
+    display: grid;
+    padding: 4%;
   }
 
   h1 {
@@ -176,5 +177,27 @@ p,
 
   .user-info {
     padding-top: 5%;
+  }
+
+  .share-section {
+    padding: 16px;
+    height: max-content;
+    width: 300px;
+    border-radius: 15px;
+    transform: translate(14.35rem, 6rem);
+  }
+
+  .share-section::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-top: 20px solid hsl(217, 19%, 35%);
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    margin-left: -15px;
+    margin-bottom: -19px;
   }
 }
