@@ -5,6 +5,10 @@ html {
   font-family: "Manrope", sans-serif;
   font-optical-sizing: auto;
   background-color: hsl(210, 46%, 95%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 main {
@@ -127,6 +131,13 @@ button {
 
 .close-button img {
   filter: brightness(300%);
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
 }
 
 .attribution {
